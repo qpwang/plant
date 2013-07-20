@@ -1,0 +1,6 @@
+.header { background-color:#edf4ed; color:#072; }
+.header .logo span { font-size:14px; line-height:30px; }
+.header .logo span[title="big"] { font-size:24px; color:#072; }
+.header .logo span.a { color:#072; }
+.header .logo span.b { color:#ededed; }
+
