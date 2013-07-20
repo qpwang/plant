@@ -1,6 +1,20 @@
 # Django settings for plant project.
 import os
 PROJECT_PATH = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+import os
+if 'SERVER_SOFTWARE' in os.environ:
+    from bae.core import const
+    DB_NAME = 'plant'
+    DB_USER = const.MYSQL_USER
+    DB_PASS = const.MYSQL_PASS
+    DB_HOST = const.MYSQL_HOST
+    DB_PORT = const.MYSQL_PORT
+else:
+    DB_NAME = 'plant'
+    DB_USER = 'root'
+    DB_PASS = ''
+    DB_HOST = 'localhost'
+    DB_PORT = '3306'
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -10,12 +24,6 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
-
-DB_NAME = 'plant'
-DB_USER = 'root'
-DB_PASS = ''
-DB_HOST = 'localhost'
-DB_PORT = '3306'
 
 DATABASES = {
     'default': {
