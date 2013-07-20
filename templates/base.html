@@ -14,13 +14,13 @@
         <header class="ck-header">
             <span class="ck-top-title">{% block html_title %}植物日记{% endblock %}</span>
             <span class="ck-top-nav"></span>
-            <span class="ck-top-actions"></span>
+            <span class="ck-top-actions">{% block top_actions %}{% endblock %}</span>
             <div class="ckcfg-navdrawer">
                 <div class="ckd-hd">
                     <h2>植物日记</h2>
                     <div class="ck-actions-button nav-accounts" data-fluid="true" data-title="饭团">
                         <span>饭团</span>
-                        <a href="/settings" class="ck-option ck-link-extern">设置</a>
+                        <a href="#" class="ck-option ck-modal-link" data-iframe-url="/settings" data-title="设置">设置</a>
                     </div>
                 </div>
                 <div class="ckd-content">
@@ -37,12 +37,12 @@
                         <li><a class="ck-link" href="/new">记录成长</a></li>
                     </ul>
                     <ul class="ck-navdrawer-more">
-                        <li><a class="ck-link" href="/settings">设置</a></li>
+                        <li><a class="ck-modal-link" data-iframe-url="/settings" href="#" data-title="设置" data-confirm-text="提交">设置</a></li>
                         <li><a class="ck-link" href="/logout">登出</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="ckcfg-card-actions"></div>
+            <div class="ckcfg-card-actions" data-source="ckdActionBar"></div>
             <div class="ckcfg-page-actions"></div>
         </header>
         <div class="ck-wrapper">

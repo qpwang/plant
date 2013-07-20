@@ -1,3 +1,6 @@
+ul {
+    margin: 10px;
+}
 .ck-navdrawer li {
   border-top: 1px solid #414141;
   border-bottom: 1px solid #292929;
@@ -150,7 +153,7 @@ span.sep {
     zoom:1;
 }
 
-.activity-timeline + .ck-blank-unit {
+.ck-blank-unit {
     display: none;
 }
 
@@ -178,24 +181,16 @@ span.link:first-child {
     font-weight: bold;
 }
 
-.tagcloud {
-    margin: 10px;
-}
-
 .tagcloud li {
     display: inline-block;
     padding: 7px 15px;
-    margin: 5px;
+    margin: 5px 3px;
     background: white;
     font-size: 14px;
     border: 1px solid #DDD;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-}
-
-.article-list {
-    margin: 10px;
 }
 
 .article-list li {
@@ -217,4 +212,61 @@ span.link:first-child {
 
 .article-list li .summary {
     color: #888;
+}
+
+.ck-navdrawer ul {
+    margin: 0;
+}
+
+.plants li {
+    border: 1px solid #DDD;
+    background-color: white;
+    padding: 10px 15px;
+    color: #777;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+margin: 20px 0;
+}
+
+.plants li .plant-name {
+    font-size: 15px;
+    border-bottom: 1px solid #DDD;
+    padding: 0 5px;
+}
+
+.plant-status {
+    float: right;
+    line-height: 25px;
+    letter-spacing: 0.2em;
+}
+
+.health {
+    color: green;
+}
+
+.need-water {
+    color: red;
+}
+
+.plant-info {
+    margin: 10px 0;
+    line-height: 24px;
+}
+
+.btn-add {
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    margin: 4px;
+    margin-right: 10px !important;
+    background: url('/static/img/plus.png') !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+}
+
+.confirm {
+    display: none !important;
 }

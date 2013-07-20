@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*-
 # AUTHOR:   fanzeyi
 # CREATED:  15:58:48 20/07/2013
-# MODIFIED: 19:04:15 20/07/2013
+# MODIFIED: 07:21:07 21/07/2013
 
 from flask import Flask
 from flask import render_template
 
 app = Flask(__name__)
+app.debug = True
 
 @app.route('/')
 def home():
@@ -16,6 +17,14 @@ def home():
 @app.route('/explore')
 def explore():
     return render_template("explore.html")
+
+@app.route('/plants')
+def plants():
+    return render_template("myplant.html")
+
+@app.route('/settings')
+def settings():
+    return render_template("settings.html")
 
 @app.route('/wiki/1')
 def wiki1():
