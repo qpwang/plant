@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block html_title %}植物{% endblock %}
+
+{% block body %}
+
+<div class="ck-box-unit" data-cfg-paper="true" data-cfg-disable-reader="true">
+    <h2 class="ckd-hd">小花</h2>
+    <img class="ck-link-img" src="/static/img/plant1.jpg">
+</div>
+
+<div class="ck-list-unit"
+    data-style="post"
+    data-cfg-plainhd="true"
+    data-source="ckdListA">
+    <div class="ckd-hd">概况</div>
+</div>
+
+<div class="ck-list-unit"
+    data-style="post"
+    data-cfg-plainhd="true"
+    data-source="ckdListB">
+    <div class="ckd-hd">时间轴</div>
+</div>
+
+<div class="ck-list-unit"
+    data-style="post"
+    data-cfg-plainhd="true"
+    data-source="ckdListC">
+    <div class="ckd-hd">博客</div>
+</div>
+
+<div class="ck-raw" id="rawData1">
+    <div class="ckd-source ckdListA">
+        <div class="ckd-item ckdItemA">
+            <span class="ckd-title">花</span>
+            <span class="ckd-title-prefix">类型：</span>
+        </div>
+        <div class="ckd-item ckdItemB">
+            <span class="ckd-title">健康</span>
+            <span class="ckd-title-prefix">状态：</span>
+        </div>
+        <div class="ckd-item ckdItemC">
+            <span class="ckd-title">2013-02-25T12:23:21+08:00</span>
+            <span class="ckd-title-prefix">生日：</span>
+        </div>
+        <div class="ckd-item ckdItemD">
+            <span class="ckd-title">3</span>
+            <span class="ckd-title-prefix">图片：</span>
+        </div>
+        <div class="ckd-item ckdItemE">
+            <span class="ckd-title">24 C</span>
+            <span class="ckd-title-prefix">温度：</span>
+        </div>
+        <div class="ckd-item ckdItemF">
+            <span class="ckd-title">45 %</span>
+            <span class="ckd-title-prefix">湿度：</span>
+        </div>
+        <div class="ckd-item ckdItemG">
+            <span class="ckd-title">2小时以前</span>
+            <span class="ckd-title-prefix">最近一次浇水：</span>
+        </div>
+    </div>
+    <div class="ckd-source ckdListB">
+        <div class="ckd-item ckdItemA">
+            <span class="ckd-title">花</span>
+            <span class="ckd-title-prefix">类型：</span>
+        </div>
+    </div>
+    <div class="ckd-source ckdListC">
+        <div class="ckd-item ckdItemA">
+            <span class="ckd-title">花</span>
+            <span class="ckd-title-prefix">类型：</span>
+        </div>
+    </div>
+</div>
+{% endblock %}
