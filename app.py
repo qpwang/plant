@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # AUTHOR:   fanzeyi
 # CREATED:  15:58:48 20/07/2013
-# MODIFIED: 23:05:34 20/07/2013
+# MODIFIED: 07:21:07 21/07/2013
 
 from flask import Flask
 from flask import render_template
@@ -26,5 +26,13 @@ def plants():
 def settings():
     return render_template("settings.html")
 
+@app.route('/wiki/1')
+def wiki1():
+    return render_template("wiki1.html")
+
+@app.route('/plant/1')
+def plant1():
+    return render_template("plant1.html")
+
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0")
