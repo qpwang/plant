@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block html_title %}我的植物{% endblock %}
+
+{% block body %}
+<ul class="plants">
+    <a href="/plant/1" class="ck-link">
+        <li>
+            <span class="plant-status health">健康</span>
+            <div class="plant-name">水仙</div>
+            <div class="plant-info">
+                <span class="temperature">当前室温： 26℃</span>
+                <br />
+                <span class="humidity">当前湿度： 45%</span>
+                <br />
+                <span class="last-update">最后更新时间： 5 分钟前</span>
+            </div>
+        </li>
+    </a>
+    <a href="/plant/1" class="ck-link">
+        <li>
+            <span class="plant-status need-water">需要浇水</span>
+            <div class="plant-name">牡丹 - 1</div>
+            <div class="plant-info">
+                <span class="temperature">当前室温： 32℃</span>
+                <br />
+                <span class="humidity">当前湿度： 20%</span>
+                <br />
+                <span class="last-update">最后更新时间： 7 分钟前</span>
+            </div>
+        </li>
+    </a>
+    <a href="/plant/1" class="ck-link">
+        <li>
+            <span class="plant-status health">健康</span>
+            <div class="plant-name">牡丹 - 2</div>
+            <div class="plant-info">
+                <span class="temperature">当前室温： 28℃</span>
+                <br />
+                <span class="humidity">当前湿度： 42%</span>
+                <br />
+                <span class="last-update">最后更新时间： 6 分钟前</span>
+            </div>
+        </li>
+    </a>
+</ul>
+<script type="text/template" class="ckd-source addPlant" data-mobile="true">
+<form method="post" action="/plant/add" class="annotaCommentForm">
+    <div class="ck-form-unit">
+        <div class="ckd-item">
+            <label class="ck-title">植物名称</label>
+            <input name="plant-name" type="text"></input>
+        </div>
+        <div class="ckd-item">
+            <label class="ck-title">植物种类</label>
+            <select name="kind" style="width:100%; line-height: 40px;">
+                <option>水仙花</option>
+                <option>牡丹</option>
+                <option>月季</option>
+            </select>
+        </div>
+        <div class="ckd-item">
+            <label class="ck-title">传感器用户名</label>
+            <input type="text" name="ht-username" />
+        </div>
+        <div class="ckd-item">
+            <label class="ck-title">传感器密码</label>
+            <input type="password" name="ht-password" />
+        </div>
+        <div class="ckd-item">
+            <button type="submit" class="ck-post-button" data-style="big" data-fluid="true">
+                <span>Submit</span>
+            </button>
+        </div>
+    </div>
+</form>
+</script>
+{% endblock %}
+
+{% block top_actions %}
+<a href="#" class="btn-add ckd-item ck-modal-button" data-source="addPlant" data-title="添加植物"></a>
+{% endblock %}
