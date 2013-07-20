@@ -4,7 +4,7 @@ PROJECT_PATH = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 import os
 if 'SERVER_SOFTWARE' in os.environ:
     from bae.core import const
-    DB_NAME = 'plant'
+    DB_NAME = 'sKKCxuyGjvHYjIetHRwx'
     DB_USER = const.MYSQL_USER
     DB_PASS = const.MYSQL_PASS
     DB_HOST = const.MYSQL_HOST
