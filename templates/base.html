@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/cardkit.min.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script>function ckControl(){return false}</script>    
+    {% block head %}{% endblock %}
+</head>
+<body ontouchstart="return ckControl()">
+<div class="ck-root">
+    <div class="ck-main">
+        <header class="ck-header">
+            <span class="ck-top-title">{% block html_title %}植物日记{% endblock %}</span>
+            <span class="ck-top-nav"></span>
+            <span class="ck-top-actions"></span>
+            <div class="ckcfg-navdrawer">
+                <div class="ckd-hd">
+                    <h2>植物日记</h2>
+                    <div class="ck-actions-button nav-accounts" data-fluid="true" data-title="饭团">
+                        <span>饭团</span>
+                        <a href="/settings" class="ck-option ck-link-extern">设置</a>
+                    </div>
+                </div>
+                <div class="ckd-content">
+                    <div class="search">
+                        <a class="ck-modal-link" href="#" data-url="formcontent.html">Search</a>
+                    </div>
+                    <ul>
+                        <li><a class="ck-link" href="/">首页</a></li>
+                        <li><a class="ck-link" href="/explore">探索</a></li>
+                    </ul>
+                    <h6>我的植物</h6>
+                    <ul>
+                        <li><a class="ck-link" href="/plants">我的植物</a></li>
+                        <li><a class="ck-link" href="/new">记录成长</a></li>
+                    </ul>
+                    <ul class="ck-navdrawer-more">
+                        <li><a class="ck-link" href="/settings">设置</a></li>
+                        <li><a class="ck-link" href="/logout">登出</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ckcfg-card-actions"></div>
+            <div class="ckcfg-page-actions"></div>
+        </header>
+        <div class="ck-wrapper">
+            <div class="ck-card" id="ckDefault">
+                {% block body %}{% endblock %}
+            </div>
+            <div class="ck-card ck-loading" id="ckLoading">
+                <div>
+                    <p><span></span><span></span><span></span></p>
+                    <p>加载中...</p>
+                </div>
+            </div>
+            <footer class="ck-footer">
+                <div class="copyright">&copy; 2005－2012 douban.com, all rights reserved</div>
+            </footer>            
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/static/js/cardkit.min.js"></script>
+</body>
+</html>
