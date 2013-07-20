@@ -1,0 +1,220 @@
+.ck-navdrawer li {
+  border-top: 1px solid #414141;
+  border-bottom: 1px solid #292929;
+  background: #323232;
+  padding: 2px;
+}
+.ck-navdrawer li a {
+  display: block;
+  padding: 8px 23px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: bold;
+}
+.ck-navdrawer li:first-child {
+  border-top: 0;
+}
+.ck-navdrawer li:last-child {
+  border-bottom: 0;
+}
+.ck-navdrawer ul:last-child li:last-child {
+  border-bottom: 1px solid #414141;
+  padding-bottom: 0;
+}
+.ck-navdrawer ul:last-child li:last-child a {
+  border-bottom: 1px solid #292929;
+  padding-bottom: 15px;
+}
+.ck-navdrawer > header h2 {
+  display: inline-block;
+  padding: 8px 23px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+.ck-navdrawer .search {
+  background: #242424;
+  border-bottom: 1px solid #424242;
+}
+.ck-navdrawer .search a {
+  display: block;
+  height: 42.5px;
+  line-height: 42.5px;
+  padding: 0 25px;
+  color: #525252;
+  font-size: 13px;
+}
+.ck-navdrawer h6 {
+  background: #3b3b3b;
+  color: #919191;
+  padding: 5px 25px;
+  font-size: 11px;
+  line-height: 13px;
+}
+.ck-navdrawer > header {
+    box-shadow: none;
+    border-bottom: 1px solid #1F1F1F;
+}
+.ck-navdrawer-more {
+    border-top: 20px solid #3B3B3B;
+}
+.ck-navdrawer .nav-accounts {
+  float: right;
+  display: inline-block;
+  border: 1px solid #000;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 2px #424242;
+  -moz-box-shadow: inset 0 0 2px #424242;
+  box-shadow: inset 0 0 2px #424242;
+  text-shadow: none;
+  background: #333;
+  background-image: -webkit-linear-gradient(bottom,#1D1D1D,#2C2C2C);
+  background-image: -moz-linear-gradient(bottom,#1D1D1D,#2C2C2C);
+  background-image: linear-gradient(bottom,#1D1D1D,#2C2C2C);
+  color: #FFF;
+  margin: 5px 10px;
+  padding: 5px 15px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: inherit;
+  height: auto;
+}
+
+.activity-timeline {
+    margin: 10px;
+}
+
+.activity-timeline li {
+    display: block;
+    background: white;
+    border: 1px solid white;
+    -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    height: auto;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+    margin: 20px 0;
+}
+
+.activity-timeline li .ck-actions-button {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.at-showcase .avatar {
+    float: left;
+}
+
+.avatar img {
+    display: block;
+    line-height: 0;
+}
+
+.activity-info {
+    margin-left: 65px;
+    font-size: 13px;
+    line-height: 26px;
+}
+
+.activity-meta {
+    color: #888;
+}
+
+.activity-info .username {
+    font-weight: normal;
+}
+
+span.sep {
+    margin: 0 5px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+    visibility: hidden;
+}
+.clearfix {
+    zoom:1;
+}
+
+.activity-timeline + .ck-blank-unit {
+    display: none;
+}
+
+span.link {
+    margin: 0 5px;
+    color: #37A;
+}
+
+span.link:first-child {
+    margin-left: 0;
+}
+
+.message-image {
+    float: right;
+}
+
+.page-title {
+    margin: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #DDD;
+}
+
+.page-title h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tagcloud {
+    margin: 10px;
+}
+
+.tagcloud li {
+    display: inline-block;
+    padding: 7px 15px;
+    margin: 5px;
+    background: white;
+    font-size: 14px;
+    border: 1px solid #DDD;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.article-list {
+    margin: 10px;
+}
+
+.article-list li {
+    margin: 10px 0;
+    border: 1px solid #DDD;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.article-list li header h1 {
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 15px;
+}
+
+.article-list li .summary {
+    color: #888;
+}
