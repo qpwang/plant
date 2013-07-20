@@ -17,5 +17,9 @@ def home():
 def explore():
     return render_template("explore.html")
 
+@app.route('/wiki/1')
+def wiki1():
+    return render_template("wiki1.html")
+
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0")
