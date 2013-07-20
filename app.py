@@ -21,5 +21,9 @@ def explore():
 def wiki1():
     return render_template("wiki1.html")
 
+@app.route('/plant/1')
+def plant1():
+    return render_template("plant1.html")
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
