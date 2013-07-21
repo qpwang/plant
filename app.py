@@ -34,5 +34,9 @@ def wiki1():
 def plant1():
     return render_template("plant1.html")
 
+@app.route('/new')
+def new():
+    return render_template("new.html")
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
