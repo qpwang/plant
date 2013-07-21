@@ -1,11 +1,18 @@
 {% extends "base.html" %}
 
-{% block html_title %}植物{% endblock %}
+{% block html_title %}水仙{% endblock %}
 
 {% block body %}
+<style type="text/css">
+.ck-list-unit .ck-title-line {
+    margin-bottom: 0;
+}
+.ck-item {
+    padding: 10px 0 !important;
+}
+</style>
 
 <div class="ck-box-unit" data-cfg-paper="true" data-cfg-disable-reader="true">
-    <h2 class="ckd-hd">小花</h2>
     <img class="ck-link-img" src="/static/img/plant1.jpg">
 </div>
 
@@ -33,7 +40,7 @@
 <div class="ck-raw" id="rawData1">
     <div class="ckd-source ckdListA">
         <div class="ckd-item ckdItemA">
-            <span class="ckd-title">花</span>
+            <span class="ckd-title"><a href="/wiki/1" class="ck-link">花</a></span>
             <span class="ckd-title-prefix">类型：</span>
         </div>
         <div class="ckd-item ckdItemB">
@@ -41,7 +48,7 @@
             <span class="ckd-title-prefix">状态：</span>
         </div>
         <div class="ckd-item ckdItemC">
-            <span class="ckd-title">2013-02-25T12:23:21+08:00</span>
+            <span class="ckd-title">2012 年 3 月 17 日</span>
             <span class="ckd-title-prefix">生日：</span>
         </div>
         <div class="ckd-item ckdItemD">
@@ -62,15 +69,19 @@
         </div>
     </div>
     <div class="ckd-source ckdListB">
-        <div class="ckd-item ckdItemA">
-            <span class="ckd-title">花</span>
-            <span class="ckd-title-prefix">类型：</span>
+        <div class="ckd-item ckdItemA" style="text-align:center;">
+            <img src="/static/img/timeline.png" style="width: 420px; margin: 0 auto;"/>
         </div>
     </div>
+</div>
+
+<div class="ck-raw" id="rawData2">
     <div class="ckd-source ckdListC">
-        <div class="ckd-item ckdItemA">
-            <span class="ckd-title">花</span>
-            <span class="ckd-title-prefix">类型：</span>
+        <div class="ckd-item ckd-ItemA">
+            <img class="ckd-icon ckd-ItemAIcon" src="/static/img/avatar.png" />
+            <a class="ckd-title ckdItemATitle" href="#titleLink">养盆水仙好过年</a>
+            <span class="ckd-desc ckdItemADesc">44 分钟前</span>
+            <span class="ckd-content ckdItemAContent" style="margin-top: 20px; display: block;color: #777;">一盏盈盈净水，一捧珠玑石子，水仙静立其中，轻吐清香。李笠渔道，在女子中，面似桃，腰似柳，丰如牡丹芍药，瘦比秋菊海棠的，随处可见；而像水仙那样淡而多姿，不动不摇而能媚的实在没有见过。笔者深以为然。水仙镂冰作面，剪雪为衣，馨香六瓣，金盏银台，配上翠袖绿裳，微低着头，秀逸清新，难怪她被誉为“凌波仙子”，常被文人雅士养于书桌上，又称之为“岁暮清供”。以“水仙”二字名之，可谓摹写殆尽。一个“水”字，足以动人，再加上一个“仙”字，那真真是销魂。不知是谁为她起了这样清雅的名字，把水仙的神韵情态恰到好处地描了出来。至少，在花的国度里，以这样清雅的花和名面世，绝少。更...</span>
         </div>
     </div>
 </div>

@@ -3,6 +3,11 @@
 {% block html_title %}图鉴{% endblock %}
 
 {% block body %}
+<style type="text/css">
+.ck-list-unit[data-style=grid] .ck-list .ck-icon img {
+    display: block;
+}
+</style>
 
 <div class="ck-box-unit" data-cfg-paper="true" data-cfg-disable-reader="true">
     <img class="ck-link-img" src="/static/img/wiki1.jpg">
@@ -25,7 +30,7 @@
             <span class="ckd-title-prefix">拉丁学名：</span>
         </div>
         <div class="ckd-item ckdItemC">
-            <span class="ckd-title">凌波仙子、金盏银台、落神香妃、玉玲珑、金银台、姚女花……</span>
+            <span class="ckd-title">凌波仙子、金盏银台、落神香妃、玉玲珑、金银台、姚女花</span>
             <span class="ckd-title-prefix">别称：</span>
         </div>
         <div class="ckd-item ckdItemD">
@@ -58,4 +63,47 @@
         </div>
     </div>
 </div>
+
+<div class="ck-list-unit" 
+        data-style="grid" 
+        data-cfg-plainhd="true"
+        data-source="ckdListB">
+    <div class="ckd-hd">关于水仙的图片</div>
+</div>
+
+<div class="ck-raw" id="rawData2">
+    <div class="ckd-source ckdListB">
+        <div class="ckd-item ckd-ItemA">
+            <img class="ckd-icon ckd-ItemAIcon" src="/static/img/wiki-1.jpg" />
+        </div>
+        <div class="ckd-item ckd-ItemB">
+            <img class="ckd-icon ckd-ItemBIcon" src="/static/img/wiki-2.jpg" />
+        </div>
+        <div class="ckd-item ckd-ItemC">
+            <img class="ckd-icon ckd-ItemCIcon" src="/static/img/wiki-3.jpg" />
+        </div>
+        <div class="ckd-item ckd-ItemD">
+            <img class="ckd-icon ckd-ItemDIcon" src="/static/img/wiki-4.jpg" />
+        </div>
+    </div>
+</div>
+
+<div class="ck-list-unit" 
+        data-style="post" 
+        data-cfg-plainhd="true"
+        data-source="ckdListC">
+    <div class="ckd-hd">关于水仙的文字</div>
+</div>
+
+<div class="ck-raw" id="rawData2">
+    <div class="ckd-source ckdListC">
+        <div class="ckd-item ckd-ItemA">
+            <img class="ckd-icon ckd-ItemAIcon" src="/static/img/avatar.png" />
+            <a class="ckd-title ckdItemATitle" href="#titleLink">养盆水仙好过年</a>
+            <span class="ckd-desc ckdItemADesc">43 分钟前</span>
+            <span class="ckd-content ckdItemAContent" style="margin-top: 20px; display: block;color: #777;">一盏盈盈净水，一捧珠玑石子，水仙静立其中，轻吐清香。李笠渔道，在女子中，面似桃，腰似柳，丰如牡丹芍药，瘦比秋菊海棠的，随处可见；而像水仙那样淡而多姿，不动不摇而能媚的实在没有见过。笔者深以为然。水仙镂冰作面，剪雪为衣，馨香六瓣，金盏银台，配上翠袖绿裳，微低着头，秀逸清新，难怪她被誉为“凌波仙子”，常被文人雅士养于书桌上，又称之为“岁暮清供”。以“水仙”二字名之，可谓摹写殆尽。一个“水”字，足以动人，再加上一个“仙”字，那真真是销魂。不知是谁为她起了这样清雅的名字，把水仙的神韵情态恰到好处地描了出来。至少，在花的国度里，以这样清雅的花和名面世，绝少。更...</span>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
