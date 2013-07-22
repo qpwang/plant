@@ -1,39 +1,31 @@
 {% extends "base.html" %}
 
-{% block html_title %}成长日记{% endblock %}
+{% block html_title %}记录成长{% endblock %}
 
 {% block body %}
-
-<div class="ck-form-unit">
-    <div class="ckd-item">
-        <label for="upload-image">上传快照</label>
-        <input id="upload-image" type="file" name="image" placeholder="上传快照" value="" />
-    </div>
-</div>
-<div class="ck-form-unit">
-    <div class="ckd-item">
-        <div class="ck-box-unit" data-cfg-paper="true" data-cfg-disable-reader="true">
-        <label class="ck-title">种类</label>
+<form method="post" action="/plant/add" class="annotaCommentForm">
+    <div class="ck-form-unit">
+        <div class="ckd-item">
+            <label class="ck-title">选择照片</label>
+            <input name="plant-name" type="file"></input>
         </div>
-        <div class="ck-box-unit" data-cfg-paper="true" data-cfg-disable-reader="true">
+        <div class="ckd-item">
+            <label class="ck-title">植物种类</label>
             <div class="ck-select actions1 demo"
                 data-fluid="true"
-                data-title="选择植物">
+                data-title="选择植物" style="width: 100%">
                 <input type="hidden" value="date">
-                <button type="button" value="price" class="ck-option">仙人球</button>
-                <button type="button" value="date" class="ck-option enabled">小花</button>
-                <button type="button" value="alpha" class="ck-option">牡丹</button>
-                <button type="button" value="editor" class="ck-option">君子兰</button>
+                <button style="width: 95%;" type="button" value="price" class="ck-option">仙人球</button>
+                <button style="width: 95%;" type="button" value="date" class="ck-option enabled">小花</button>
+                <button style="width: 95%;" type="button" value="alpha" class="ck-option">牡丹</button>
+                <button style="width: 95%;" type="button" value="editor" class="ck-option">君子兰</button>
             </div>
         </div>
+        <div class="ckd-item">
+            <button type="submit" class="ck-post-button" data-style="big" data-fluid="true">
+                <span>上传成长</span>
+            </button>
+        </div>
     </div>
-</div>
-<div class="ck-form-unit">
-    <div class="ckd-item">
-        <button type="submit" class="ck-post-button" data-style="big" data-fluid="true">
-            <span>添加植物</span>
-        </button>
-    </div>
-</div>
-
+</form>
 {% endblock %}
