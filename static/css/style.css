@@ -307,3 +307,7 @@ margin: 20px 0;
     -webkit-border-radius: 3px;
     position: relative
 }
+
+.ck-root .ck-header {
+    background-color: #629E67;
+}
